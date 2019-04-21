@@ -11,8 +11,8 @@ public class MissingNumberInArrayList {
 
     private static int getMissingNo(int[] a) {
         int sum = 0;
-        int arrayLength = a.length;
-        for (int i = 0; i < arrayLength; i++) {
+        int arrayLength = a.length + 1;
+        for (int i = 0; i < a.length; i++) {
             sum += a[i];
         }
 
