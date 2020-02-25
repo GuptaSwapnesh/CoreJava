@@ -17,21 +17,11 @@ public class NumberListProblem {
         integerList.add(60);
 
         updateList(integerList);
-
     }
 
     private static void updateList(List<Integer> list) {
 
         System.out.println("List items:- " +list);
-        /*for (int i = 0; i < list.size(); i++) {
-            if (i == 0) {
-
-            } else if(list.get(i) < list.get(i-1) && list.get(i) < list.get(i+1)) {
-                list.remove(i);
-                updateList(list);
-            }
-        }*/
-
         for (int i = 1; i < list.size(); i++) {
             if(list.get(i) < list.get(i-1) && list.get(i) < list.get(i+1)) {
                 list.remove(i);
