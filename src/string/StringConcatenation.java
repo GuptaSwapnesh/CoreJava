@@ -22,5 +22,16 @@ public class StringConcatenation {
         System.out.println(sBuffer.toString());
 
 
+        String strTest = "100";
+
+        //Convert the String to Integer using Integer.valueOf
+        Integer valueOfTest = Integer.valueOf(strTest);
+        int parseIntTest = Integer.parseInt(strTest);
+
+        System.out.println("Actual String:"+ strTest);
+        System.out.println("Converted to Int:" + valueOfTest);
+        System.out.println("Converted to Int:" + parseIntTest);
+
+
     }
 }
